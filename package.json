@@ -3,6 +3,7 @@
     "version": "0.0.0",
     "private": true,
     "scripts": {
+        "build": "hexo generate",
         "clean": "hexo clean",
         "clean:yuque": "yuque-hexo clean",
         "deploy": "yuque-hexo sync && hexo deploy",
