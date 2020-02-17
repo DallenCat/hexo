@@ -6,7 +6,7 @@
 title: 山川异域，风月同天
 subtitle: ''
 description: ''
-keywords:
+keywords: ''
 author: 戴爱玲
 language: ch
 timezone: Asia/Shanghai
@@ -119,5 +119,27 @@ jsonContent:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/DallenCat/hexo.github.io # 预览https://dallencat.github.io/hexo.github.io/
+  repo: root@134.175.240.20:/home/git/hexoBlog # 预览https://dallencat.github.io/hexo.github.io/
   branch: master
+
+admin:
+  username: 13958894609
+  password_hash: $2a$10$IevdM7U7xqc3mtdj2CV7ju820RWsSP39CW6hA8rkmrCPJW3uaiGI.
+  secret: my super secret phrase
+  deployCommand: 'hexo-pubish.bat'
+
+live2d:
+  enable: true
+  pluginModelPath: assets/
+  model:
+    use: live2d-widget-model-koharu  #模板目录，在node_modules里
+  display:
+    position: right
+    width: 150 
+    height: 300
+    vOffset: 20
+  dialog:
+    enable: true
+    hitokoto: true
+  mobile:
+    show: false  #是否在手机进行显示

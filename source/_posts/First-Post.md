@@ -10,6 +10,6 @@ tags:
 
 ---
 
-<div style="width:500px;height:500px">
-{% asset_img IMG_6615(20191101-141241).JPG 这是一个新的博客的图片的说明 %}
+<div style="max-width:250px;">
+{% asset_img IMG_6615(20191101-141241).JPG %}
 </div>
