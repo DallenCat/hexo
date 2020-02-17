@@ -1,0 +1,25 @@
+language: node_js
+node_js: stable
+
+install:
+  - npm install
+
+script:
+  - npm run sync:generate
+
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "DallenCat"
+  - git config user.email "809348708@qq.com"
+  - git add .
+  - git commit -m "Update By TravisCI With Build $TRAVIS_BUILD_NUMBER"
+  - git push --force --quiet "root@www.daiailing.cn:/home/git/hexoBlog.git" master:master
+
+branches:
+  only:
+    - master
+
+cache:
+  directories:
+    - node_modules
